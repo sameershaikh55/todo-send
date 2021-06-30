@@ -12,7 +12,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 // IMPORTING REDUX
 import { connect } from "react-redux";
@@ -64,7 +64,6 @@ function App({ add, allList, deleteTodo, updateTodo }) {
   // STATES END
 
   const classes = useStyles();
-  const theme = useTheme();
 
   // HANDLE CHANGE START
   const handleChange = (event, newValue) => {
